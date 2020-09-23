@@ -1,2 +1,2 @@
-image: mikoto2000/toppers-sample-rh850f1x:latest
-
+image:
+  file: .gitpod.Dockerfile
