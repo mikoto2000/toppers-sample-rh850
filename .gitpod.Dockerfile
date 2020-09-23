@@ -19,6 +19,6 @@ COPY --from=athrill --chown=root:root \
         /opt/athrill \
         /opt/athrill
 
-ENV PATH="/usr/local/athrill-gcc/bin/:${PATH}" \
-    LD_LIBRARY_PATH="/usr/local/athrill-gcc:/usr/local/athrill-gcc/lib:${LD_LIBRARY_PATH}"
+ENV PATH="/usr/local/athrill-gcc/bin/:${PATH}"
+ENV LD_LIBRARY_PATH="/usr/local/athrill-gcc:/usr/local/athrill-gcc/lib:${LD_LIBRARY_PATH}"
 
