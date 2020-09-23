@@ -23,3 +23,8 @@ COPY --from=athrill --chown=root:root \
         /opt/athrill \
         /opt/athrill
 
+USER gitpod
+
+ENV PATH="/usr/local/athrill-gcc/bin/:${PATH}" \
+    LD_LIBRARY_PATH="/usr/local/athrill-gcc:/usr/local/athrill-gcc/lib:${LD_LIBRARY_PATH}"
+
