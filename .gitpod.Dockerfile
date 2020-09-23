@@ -4,7 +4,7 @@ RUN chown root:root /usr/local/bin/athrill2 /usr/local/bin/athrill-run
 RUN chown -R root:root /opt/athrill
 
 # カーネルビルド環境構築済みイメージ
-FROM gitpod/workspace-full
+FROM mikoto2000/toppers-kernel-build-kit:athrill-gcc-latest
 
 # athrill バイナリコピー元イメージからバイナリをコピー
 COPY --from=athrill --chown=root:root \
